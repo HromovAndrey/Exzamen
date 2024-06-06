@@ -31,10 +31,10 @@ class Website:
             if keyword in page.title or keyword in page.content:
                 found_pages.append(page)
         return found_pages
-website = Website("My Website", "http://example.com")
-website.add_page("About Us", "Welcome to our website!")
-website.add_page("Contact", "You can reach us at contact@example.com")
-results = website.search_pages("Contact")
+website = Website("Мій сайт", "http://example.com")
+website.add_page("Про нас", "Ласкаво просимо на наш сайт!")
+website.add_page("контакт", "Ви можете зв’язатися з нами за адресою contact@example.com")
+results = website.search_pages("контакт")
 for page in results:
-    print("Title:", page.title)
-    print("Content:", page.content)
+    print("Назва:", page.title)
+    print("Зміст:", page.content)
